@@ -1,0 +1,252 @@
+<html>
+<head>
+    <style>
+        
+        #div1{
+            width:auto;
+            height:auto;
+            background-color: azure;
+        }
+        #div2{
+            width:auto;
+            height:100px;
+            background: black;
+            margin-left: 5px;
+        }
+             .main{
+            height: 90px;
+            width: 150px;
+            float:left;
+            margin-bottom: 20px;
+            border:2px dotted black;
+            margin-left: 20px;
+            margin-top: 2px;
+        
+          
+        }
+        h1{
+            font-size: 30pt;
+            color: floralwhite;
+            float:left;
+            margin-top: 20px;
+            margin-left: 30px;
+            
+        }
+        a:link{
+            text-decoration: none;
+        }
+        achecked{
+            text-decoration-color: black;
+        }
+        a:hover{
+            text-decoration-color: red;
+        }
+        #div4{
+        width: 600px;
+        height: 300px;
+        background-color: white;
+        margin-top: 100px;
+        }
+        img{
+            width:200px;
+            height: 200px;
+            margin-left: 250px;
+            margin-top: 15px;
+        }
+        p{
+        float:left;
+            margin-left: 270px;
+        }
+        #p1{
+            margin-left: 400px;
+        }
+        .logo
+        {
+            margin-top: 5px;
+            margin-left: 30%;
+            height: 150px;
+            
+        }
+        p4 {
+  font-size: 50px;
+  margin-top: 0px;
+            
+}
+         p5 {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+            
+}
+      
+        
+    </style>
+    
+
+<script>
+    var count=0;
+var countdown = 60 * 60 * 1000;
+var timerId = setInterval(function(){
+  countdown -= 1000;
+  var min = Math.floor(countdown / (60 * 1000));
+  var sec = Math.floor((countdown - (min * 60 * 1000)) / 1000);
+
+  if (countdown <= 0) {
+     alert("60 min!");
+     myFunction();
+     clearInterval(timerId);
+      
+  } else {
+    document.getElementById("demo").innerHTML = min + "m " + sec + "s ";
+  }
+
+}, 1000);
+    
+    function myFunction(){
+        var cn=0;
+   var x1 = document.getElementById("a1").value;
+           var x2 = document.getElementById("a2").value;
+           var x3 = document.getElementById("a3").value;
+           var x4 = document.getElementById("a4").value;
+        if(document.getElementById('a2').checked){
+            cn++;   
+        }
+        
+        if(document.getElementById('b2').checked){
+            cn++;   
+        }
+        
+        if(document.getElementById('c1').checked){
+            cn++;   
+        }
+         if(document.getElementById('d1').checked){
+            cn++;   
+        }
+         if(document.getElementById('e2').checked){
+            cn++;   
+        }
+        if(document.getElementById('f1').checked){
+            cn++;   
+        }
+        
+        if(document.getElementById('g3').checked){
+            cn++;   
+        }
+        
+        if(document.getElementById('h1').checked){
+            cn++;   
+        }
+         if(document.getElementById('i1').checked){
+            cn++;   
+        }
+         if(document.getElementById('j4').checked){
+            cn++;   
+        }
+        
+        document.getElementById('Div1').style.display = "block";
+        
+       
+                
+document.getElementById('rt').innerHTML = "total marks are "+cn+" out of 10"
+    }
+    function myFunction2(){
+
+   
+
+    }
+
+</script>
+    <body>
+        
+    <div id=div1>
+       
+        <div id=div2>
+            <img class="main" src="Capture.PNG" alt="logo">
+              <h1><b>EXAM CORNER</b><a href="loginht.html"><img style="height: 40px; width: 50px;margin-bottom: 20px;border:2px dotted black;
+            margin-left: 480px;margin-top: 2px;" src="logout.jpg"></a></h1>
+            <br clear="all">
+        </div>
+    <p4 id="demo"></p4>
+            <h4>Q.1	Look at this series: 7, 10, 8, 11, 9, 12, ... What number should come next? </h4><br>
+          A<input type="radio" name="a" id="a1" value="A">23<br>
+         B<input type="radio" name="a" id="a2" value="B">10<br>
+         C<input type="radio" name="a" id="a3" value="C">28<br>
+         D<input type="radio" name="a" id="a4" value="D">29<hr>
+        
+        
+          <h4>Q.2
+Look at this series: 36, 34, 30, 28, 24, ... What number should come next? </h4><br>
+          A<input type="radio" name="b" id="b1">31<br>
+         B<input type="radio" name="b" id="b2">22<br>
+         C<input type="radio" name="b" id="b3">20<br>
+         D<input type="radio" name="b" id="b4">None of these<hr>
+        <h4>Q.3
+Look at this series: 22, 21, 23, 22, 24, 23, ... What number should come next? </h4><br>
+          A<input type="radio" name="c" id="c1">25<br>
+         B<input type="radio" name="c" id="c2">13<br>
+         C<input type="radio" name="c" id="c3">31<br>
+         D<input type="radio" name="c" id=c4>63<hr>
+        <h4> Q.4
+	
+	
+Look at this series: 53, 53, 40, 40, 27, 27, ... What number should come next?  </h4><br>
+          A<input type="radio" name="d" id="d1">14<br>
+         B<input type="radio" name="d" id="d2">22<br>
+         C<input type="radio" name="d" id="d3">24<br>
+         D<input type="radio" name="d" id="d4">Data inadequate<hr>
+        
+                 
+         <h4>Q.5
+Look at this series: 21, 9, 21, 11, 21, 13, 21, ... What number should come next?</h4><br>
+          A<input type="radio" name="e" id="e1">14<br>
+         B<input type="radio" name="e" id="e2">15<br>
+         C<input type="radio" name="e" id="e3">20<br>
+         D<input type="radio" name="e" id="e4">22<hr>
+        <h4>Q.6 Look at this series: 31, 29, 24, 22, 17, ... What number should come next? </h4><br>
+          A<input type="radio" name="f" id="f1" value="A">15<br>
+         B<input type="radio" name="f" id="f2" value="B">26<br>
+         C<input type="radio" name="f" id="f3" value="C">28<br>
+         D<input type="radio" name="f" id="f4" value="D">29<hr>
+        
+        
+          <h4>Q.7
+A train running at the speed of 60 km/hr crosses a pole in 9 seconds. What is the length of the train?  </h4><br>
+          A<input type="radio" name="g" id="g1">180<br>
+         B<input type="radio" name="g" id="g2">200<br>
+         C<input type="radio" name="g" id="g3">150<br>
+         D<input type="radio" name="g" id="g4">None of these<hr>
+        <h4>Q.8
+Which of the following fraction is the largest ?  </h4><br>
+          A<input type="radio" name="h" id="h1">7/8<br>
+         B<input type="radio" name="h" id="h2">13/16<br>
+         C<input type="radio" name="h" id="h3">31/40<br>
+         D<input type="radio" name="h" id=h4>63/80<hr>
+        <h4> Q.9
+	
+The length of the bridge, which a train 130 metres long and travelling at 45 km/hr can cross in 30 seconds, is:  </h4><br>
+          A<input type="radio" name="i" id="i1">RS 245<br>
+         B<input type="radio" name="i" id="i2">RS 220<br>
+         C<input type="radio" name="i" id="i3">RS 240<br>
+         D<input type="radio" name="i" id="i4">Data inadequate<hr>
+        
+                 
+         <h4>Q.10
+A man is 24 years older than his son. In two years, his age will be twice the age of his son. The present age of his son is:  </h4><br>
+          A<input type="radio" name="j" id="j1">14 year<br>
+         B<input type="radio" name="j" id="j2">18 year<br>
+         C<input type="radio" name="j" id="j3">20 year<br>
+         D<input type="radio" name="j" id="j4">22 year<hr>
+        <br>
+        <br>
+        
+         <button onclick="myFunction()"   name="btn1">submit your test</button><br>
+         <p5 id="rt"></p5>  
+      <div id="Div1"  style="display:none;" class="answer_list"  > <a href="rans1.html"><mark style="background-color: blue;padding: 10px;font-size: 25px;margin-left: 85%" >CONTINUE</mark></a></div>  
+                 
+                  
+      
+        
+        </div>
+    </body>
+    </head>
+</html>

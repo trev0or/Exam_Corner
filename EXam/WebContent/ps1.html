@@ -1,0 +1,198 @@
+<html>
+<head>
+    <style>
+        
+        #div1{
+            width:auto;
+            height:auto;
+            background-color: azure;
+        }
+        #div2{
+            width:auto;
+            height:100px;
+            background: black;
+            margin-left: 5px;
+        }
+             .main{
+            height: 90px;
+            width: 150px;
+            float:left;
+            margin-bottom: 20px;
+            border:2px dotted black;
+            margin-left: 20px;
+            margin-top: 2px;
+        
+          
+        }
+        h1{
+            font-size: 30pt;
+            color: floralwhite;
+            float:left;
+            margin-top: 20px;
+            margin-left: 30px;
+            
+        }
+        a:link{
+            text-decoration: none;
+        }
+        achecked{
+            text-decoration-color: black;
+        }
+        a:hover{
+            text-decoration-color: red;
+        }
+        #div4{
+        width: 600px;
+        height: 300px;
+        background-color: white;
+        margin-top: 100px;
+        }
+        img{
+            width:200px;
+            height: 200px;
+            margin-left: 250px;
+            margin-top: 15px;
+        }
+        p{
+        float:left;
+            margin-left: 270px;
+        }
+        #p1{
+            margin-left: 400px;
+        }
+        .logo
+        {
+            margin-top: 5px;
+            margin-left: 30%;
+            height: 150px;
+            
+        }
+        p4 {
+  font-size: 50px;
+  margin-top: 0px;
+            
+}
+         p5 {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+            
+}
+      
+        
+    </style>
+    
+
+<script>
+    var count=0;
+var countdown = 30 * 60 * 1000;
+var timerId = setInterval(function(){
+  countdown -= 1000;
+  var min = Math.floor(countdown / (60 * 1000));
+  var sec = Math.floor((countdown - (min * 60 * 1000)) / 1000);
+
+  if (countdown <= 0) {
+     alert("30 min!");
+     myFunction();
+     clearInterval(timerId);
+      
+  } else {
+    document.getElementById("demo").innerHTML = min + "m " + sec + "s ";
+  }
+
+}, 1000);
+    
+    function myFunction(){
+        var cn=0;
+   var x1 = document.getElementById("a1").value;
+           var x2 = document.getElementById("a2").value;
+           var x3 = document.getElementById("a3").value;
+           var x4 = document.getElementById("a4").value;
+        if(document.getElementById('a3').checked){
+            cn++;   
+        }
+        
+        if(document.getElementById('b1').checked){
+            cn++;   
+        }
+        
+        if(document.getElementById('c1').checked){
+            cn++;   
+        }
+         if(document.getElementById('d1').checked){
+            cn++;   
+        }
+         if(document.getElementById('e4').checked){
+            cn++;   
+        }
+        document.getElementById('Div1').style.display = "block";
+        
+       
+                
+document.getElementById('rt').innerHTML = "total marks are "+cn+" out of 5"
+    }
+    function myFunction2(){
+
+   
+
+    }
+
+</script>
+    <body>
+        
+    <div id=div1>
+       
+        <div id=div2>
+            <img class="main" src="Capture.PNG" alt="logo">
+              <h1><b>EXAM CORNER</b>
+            <a href="loginht.html"><img style="height: 40px; width: 50px;margin-bottom: 20px;border:2px dotted black;
+            margin-left: 480px;margin-top: 2px;" src="logout.jpg"></a></h1>
+            <br clear="all">
+        </div>
+    <p4 id="demo"></p4>
+            <h4>Q.1	In a 100 m race, A can beat B by 25 m and B can beat C by 4 m. In the same race, A can beat C by </h4><br>
+          A<input type="radio" name="a" id="a1" value="A">21 m<br>
+         B<input type="radio" name="a" id="a2" value="B">26 m<br>
+         C<input type="radio" name="a" id="a3" value="C">28 m<br>
+         D<input type="radio" name="a" id="a4" value="D">29 m<hr>
+        
+        
+          <h4>Q.2
+Which of the following is equal to 3.14 x 106  </h4><br>
+          A<input type="radio" name="b" id="b1">314<br>
+         B<input type="radio" name="b" id="b2">3140<br>
+         C<input type="radio" name="b" id="b3">3140000<br>
+         D<input type="radio" name="b" id="b4">None of these<hr>
+        <h4>Q.3
+Which of the following fraction is the largest ?  </h4><br>
+          A<input type="radio" name="c" id="c1">7/8<br>
+         B<input type="radio" name="c" id="c2">13/16<br>
+         C<input type="radio" name="c" id="c3">31/40<br>
+         D<input type="radio" name="c" id=c4>63/80<hr>
+        <h4> Q.4
+	
+The percentage profit earned by selling an article for Rs. 1920 is equal to the percentage loss incurred by selling the same article for Rs. 1280. At what price should the article be sold to make 25% profit?  </h4><br>
+          A<input type="radio" name="d" id="d1">RS 2000<br>
+         B<input type="radio" name="d" id="d2">RS 2200<br>
+         C<input type="radio" name="d" id="d3">RS 2400<br>
+         D<input type="radio" name="d" id="d4">Data inadequate<hr>
+        
+                 
+         <h4>Q.5
+A man is 24 years older than his son. In two years, his age will be twice the age of his son. The present age of his son is:  </h4><br>
+          A<input type="radio" name="e" id="e1">14 year<br>
+         B<input type="radio" name="e" id="e2">18 year<br>
+         C<input type="radio" name="e" id="e3">20 year<br>
+         D<input type="radio" name="e" id="e4">22 year<hr>
+        <br>
+         <button onclick="myFunction()"   name="btn1">submit your test</button><br>
+         <p5 id="rt"></p5>  
+      <div id="Div1"  style="display:none;" class="answer_list"  > <a href="ans1.html"><mark style="background-color: blue;padding: 10px;font-size: 25px;margin-left: 85%" >CONTINUE</mark></a></div>  
+                 
+                  
+      
+        
+        </div>
+    </body>
+    </head>
+</html>
